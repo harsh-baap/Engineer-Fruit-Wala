@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont;
+  background: radial-gradient(circle at top, #ffedd5, #fef3c7 40%, #ecfeff);
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    #ff4d6d,
+    #ff9f1c,
+    #ffd60a,
+    #2ec4b6
+  );
+  padding: 10px 20px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #1f2937;
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 48px 20px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: center;
+  padding: 36px;
+  border-radius: 28px;
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #fff7ed,
+    #ecfeff
+  );
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.hero img {
+  width: 80%;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.25);
+}
+
+.hero-text h2 {
+  margin-top: 0;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  background: linear-gradient(
+    90deg,
+    #ff4d6d,
+    #ff9f1c,
+    #2ec4b6
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+
+.price {
+  margin: 22px 0;
+  font-size: clamp(2.3rem, 4vw, 2.7rem);
+  font-weight: 900;
+  background: linear-gradient(
+    90deg,
+    #ff9f1c,
+    #ff4d6d
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.order-btn {
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    #2ec4b6, 
+    #38bdf8   
+  );
+  color: #0f172a;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 500px;
+  font-size: 18px;
+  font-weight: 800;
+  box-shadow: 0 16px 36px rgba(74, 88, 87, 0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.order-btn:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 24px 50px rgba(215, 241, 252, 0.55);
+}
+
+.features {
+  margin-top: 72px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 34px;
+}
+
+.card {
+  padding: 32px 24px;
+  border-radius: 26px;
+  text-align: center;
+  background: linear-gradient(
+    160deg,
+    #fff1f2,   
+    #fff7ed,   
+    #ecfeff   
+  );
+  box-shadow: 0 22px 46px rgba(135, 123, 116, 0.984);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) rotate(-0.3deg);
+  box-shadow: 0 32px 60px rgba(0, 0, 0, 0.22);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.45rem;
+  background: linear-gradient(
+    90deg,
+    #ff4d6d,
+    #ff9f1c,
+    #2ec4b6
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+
+footer {
+  margin-top: 68px;
+  background: linear-gradient(
+    135deg,
+    #ff4d6d,
+    #ff9f1c,
+    #2ec4b6
+  );
+  color: #1f2937;
+  text-align: center;
+  padding: 22px 14px;
+  font-size: 0.9rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.order-box {
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.order-box h3 {
+  margin-bottom: 12px;
+}
+
+.order-box input {
+  width: 60px;
+  padding: 6px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.order-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: #25d366;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.order-btn:hover {
+  background: #1ebe5d;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 32px 16px;
+  }
+
+  .order-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
