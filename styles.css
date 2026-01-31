@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.logo{
+.logo {
   width: 100px;
   height: 100px;
   object-fit: contain;
@@ -9,10 +9,13 @@
   border-radius: 50%;
 }
 
-
 body {
   margin: 0;
-  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont;
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont;
   background: radial-gradient(circle at top, #ffedd5, #fef3c7 40%, #ecfeff);
   color: #1f2937;
   line-height: 1.6;
@@ -25,19 +28,12 @@ header {
   gap: 20px;
   flex-direction: column;
   text-align: center;
-  background: linear-gradient(
-    135deg,
-    #ff4d6d,
-    #ff9f1c,
-    #ffd60a,
-    #2ec4b6
-  );
+  background: linear-gradient(135deg, #ff4d6d, #ff9f1c, #ffd60a, #2ec4b6);
   padding: 10px 20px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   color: #1f2937;
 }
-
 
 header h1 {
   margin: 0;
@@ -65,12 +61,7 @@ header p {
   align-items: center;
   padding: 36px;
   border-radius: 28px;
-  background: linear-gradient(
-    145deg,
-    #ffffff,
-    #fff7ed,
-    #ecfeff
-  );
+  background: linear-gradient(145deg, #ffffff, #fff7ed, #ecfeff);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
 }
 
@@ -86,12 +77,7 @@ header p {
 .hero-text h2 {
   margin-top: 0;
   font-size: clamp(2rem, 4vw, 2.5rem);
-  background: linear-gradient(
-    90deg,
-    #ff4d6d,
-    #ff9f1c,
-    #2ec4b6
-  );
+  background: linear-gradient(90deg, #ff4d6d, #ff9f1c, #2ec4b6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -105,22 +91,14 @@ header p {
   margin: 22px 0;
   font-size: clamp(2.3rem, 4vw, 2.7rem);
   font-weight: 900;
-  background: linear-gradient(
-    90deg,
-    #ff9f1c,
-    #ff4d6d
-  );
+  background: linear-gradient(90deg, #ff9f1c, #ff4d6d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .order-btn {
   display: inline-block;
-  background: linear-gradient(
-    135deg,
-    #2ec4b6, 
-    #38bdf8   
-  );
+  background: linear-gradient(135deg, #2ec4b6, #38bdf8);
   color: #0f172a;
   text-decoration: none;
   padding: 15px 20px;
@@ -128,7 +106,9 @@ header p {
   font-size: 18px;
   font-weight: 800;
   box-shadow: 0 16px 36px rgba(74, 88, 87, 0.45);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .order-btn:hover {
@@ -147,14 +127,11 @@ header p {
   padding: 32px 24px;
   border-radius: 26px;
   text-align: center;
-  background: linear-gradient(
-    160deg,
-    #fff1f2,   
-    #fff7ed,   
-    #ecfeff   
-  );
+  background: linear-gradient(160deg, #fff1f2, #fff7ed, #ecfeff);
   box-shadow: 0 22px 46px rgba(135, 123, 116, 0.984);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .card:hover {
@@ -165,12 +142,7 @@ header p {
 .card h3 {
   margin-top: 0;
   font-size: 1.45rem;
-  background: linear-gradient(
-    90deg,
-    #ff4d6d,
-    #ff9f1c,
-    #2ec4b6
-  );
+  background: linear-gradient(90deg, #ff4d6d, #ff9f1c, #2ec4b6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -180,15 +152,9 @@ header p {
   opacity: 0.9;
 }
 
-
 footer {
   margin-top: 68px;
-  background: linear-gradient(
-    135deg,
-    #ff4d6d,
-    #ff9f1c,
-    #2ec4b6
-  );
+  background: linear-gradient(135deg, #ff4d6d, #ff9f1c, #2ec4b6);
   color: #1f2937;
   text-align: center;
   padding: 22px 14px;
@@ -197,13 +163,39 @@ footer {
   border-top-right-radius: 30px;
 }
 
+#name {
+  width: 100%;
+  max-width: 360px;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid #95979a;
+  outline: none;
+  background: #ffffff;
+  color: #1f2937;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+#address {
+  width: 100%;
+  max-width: 360px;
+  padding: 14px 16px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 2px solid #95979a;
+  outline: none;
+  background: #ffffff;
+  color: #1f2937;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
 .order-box {
   max-width: 300px;
   padding: 20px;
   border-radius: 16px;
   background: linear-gradient(135deg, #ffecd2, #fcb69f);
   text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .order-box h3 {
