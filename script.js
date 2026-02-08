@@ -3,7 +3,7 @@ function orderNow() {
   const price = 30;
   const total = qty * price;
 
-  const phoneNumber = "917498886372";
+  const phoneNumber = "918975570155";
 
   const name = document.getElementById("name").value;
   const address = document.getElementById("address").value;
