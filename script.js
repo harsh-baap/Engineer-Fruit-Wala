@@ -1,6 +1,6 @@
 function orderNow() {
   const qty = document.getElementById("qty").value;
-  const price = 30;
+  const price = 40;
   const total = qty * price;
 
   const phoneNumber = "918975570155";
